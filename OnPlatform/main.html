@@ -1,0 +1,52 @@
+<!--Created by RoiCohen on 19/04/2017.!-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link href="main.css" rel="stylesheet" />
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <meta charset="utf-8">
+    <title>KML</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <div id="aside_imgL">
+            </br></br></br></br>
+            <div id="text">
+                Please Insert Cordinate: (X,Y)
+            </div>
+        </div>
+        <form action="">
+            <input type="radio" name="option" id="1" value="bad">Bad Example
+            <input type="radio" name="option" id="2"value="allw">Allowed Area
+        </form>
+    </div>
+    <script >onLoad();</script>
+    <div class="cordinateUser">
+        <form>
+            <input type="text" id="x" placeholder="X Cord" maxlength="16">
+            <input type="text" id="y" placeholder="Y Cord" maxlength="16">
+            <a href="#" class="myButton" id="acc" onclick="sendCordainate()">Send Cordinate</a>
+        </form>
+    </div>
+    <div id="map">Please Insert cordinate: X and Y</div>
+    <!--
+        script async AND defer to load initMap properly.
+    !-->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8IJtbuwu6GdVyd-4LlyJ6EPm9kanpxG0&callback=initMap">
+    </script>
+    <div class="footer">
+        <div id="footerText">
+            Created By Roi Cohen<a href="../Files/Readme.txt">(README)</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
